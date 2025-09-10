@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/images/logo.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go Template2</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    .generate-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+
+    .generate-btn:hover {
+      background: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+    }
+
+    .generate-btn:active {
+      transform: translateY(0);
+    }
+
+    .generate-btn:disabled {
+      background: #6c757d;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .loading {
+      position: relative;
+    }
+
+    .loading::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      margin: auto;
+      border: 2px solid transparent;
+      border-top-color: #ffffff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @keyframes spin {
+      0% {
+        transform: translateY(-50%) rotate(0deg);
+      }
+
+      100% {
+        transform: translateY(-50%) rotate(360deg);
+      }
+    }
+
+    .success-message {
+      position: fixed;
+      top: 80px;
+      right: 20px;
+      background: #28a745;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+      z-index: 1000;
+      animation: slideIn 0.3s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <button id="generateBtn" class="generate-btn">生成图片</button>
+
+  <div id="content" style="position: relative; margin: 0 auto; width: 1000px;">
+    <img src="https://techmap-1258344706.file.myqcloud.com/image/c110a548-6929-49be-ad35-873f869c225d.png?imageView2" />
+    <div id="nameText" style="position: absolute;top: 140px;left:60px;color: #333;font-size: 18px;font-weight: bold;">
+      {{.name}}</div>
+    <div id="projectText" style="position: absolute;top: 170px;left:60px;color: #666;font-size: 16px;">{{.projectNames}}
+    </div>
+    <div id="dateText" style="position: absolute;top: 200px;left:60px;color: #666;font-size: 16px;">{{.date}}</div>
+    <div id="dateText" style="position: absolute;top: 250px;left:60px;color: #666;font-size: 16px;">test</div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const generateBtn = document.getElementById('generateBtn');
+      const content = document.getElementById('content');
+      const nameText = document.getElementById('nameText');
+      const projectText = document.getElementById('projectText');
+      const dateText = document.getElementById('dateText');
+
+      // 确保文本内容正确显示的函数
+      function ensureTextContent() {
+        // 如果Go模板变量没有被渲染，使用默认值或从URL参数获取
+        if (nameText.textContent.includes('{{.name}}')) {
+          const urlParams = new URLSearchParams(window.location.search);
+          nameText.textContent = urlParams.get('name') || '用户姓名';
+        }
+        if (projectText.textContent.includes('{{.projectNames}}')) {
+          const urlParams = new URLSearchParams(window.location.search);
+          projectText.textContent = urlParams.get('projectNames') || '项目名称';
+        }
+        if (dateText.textContent.includes('{{.date}}')) {
+          const urlParams = new URLSearchParams(window.location.search);
+          dateText.textContent = urlParams.get('date') || new Date().toLocaleDateString();
+        }
+      }
+
+      generateBtn.addEventListener('click', async function () {
+        try {
+          // 确保文本内容正确
+          // ensureTextContent();
+
+          // 禁用按钮并显示加载状态
+          generateBtn.disabled = true;
+          generateBtn.classList.add('loading');
+          generateBtn.textContent = '生成中...';
+
+          // 等待一小段时间确保DOM更新
+          await new Promise(resolve => setTimeout(resolve, 100));
+
+          // 使用html2canvas生成图片
+          const canvas = await html2canvas(content, {
+            backgroundColor: '#ffffff',
+            scale: 2, // 提高图片质量
+            useCORS: true, // 允许跨域图片
+            allowTaint: true,
+            logging: false
+          });
+
+          // 创建下载链接
+          const link = document.createElement('a');
+          link.download = `techmap-${new Date().getTime()}.png`;
+          link.href = canvas.toDataURL('image/png');
+
+          // 触发下载
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+
+          // 显示成功消息
+          showSuccessMessage('图片生成成功！');
+
+        } catch (error) {
+          console.error('生成图片失败:', error);
+          showSuccessMessage('生成失败，请重试', 'error');
+        } finally {
+          // 恢复按钮状态
+          generateBtn.disabled = false;
+          generateBtn.classList.remove('loading');
+          generateBtn.textContent = '生成图片';
+        }
+      });
+
+      function showSuccessMessage(message, type = 'success') {
+        const messageEl = document.createElement('div');
+        messageEl.className = 'success-message';
+        messageEl.textContent = message;
+
+        if (type === 'error') {
+          messageEl.style.background = '#dc3545';
+        }
+
+        document.body.appendChild(messageEl);
+
+        // 3秒后自动移除消息
+        setTimeout(() => {
+          if (messageEl.parentNode) {
+            messageEl.parentNode.removeChild(messageEl);
+          }
+        }, 3000);
+      }
+    });
+  </script>
+</body>
+
+</html>
