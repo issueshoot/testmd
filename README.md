@@ -37,5 +37,5 @@ IssueShoot于2022年4月在腾讯内部诞生，2025年9月正式拓展到外部
 | 招募中 | [test 6](https://github.com/issueshoot/testmd/issues/6) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
 | 招募中 | [test 5](https://github.com/issueshoot/testmd/issues/5) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
 | 招募中 | [test 2](https://github.com/issueshoot/testmd/issues/2) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
-| 进行中 | [test 3](https://github.com/issueshoot/testmd/issues/3) | 研发效能 | 中 | 5 | 2025-09-17 |  -  |  
+| 进行中 | [test 3](https://github.com/issueshoot/testmd/issues/3) | 研发效能 | 中 | 5 | 2025-09-17 |  issueshoot@github.com  |  
 
