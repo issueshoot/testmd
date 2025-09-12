@@ -28,13 +28,14 @@ IssueShoot于2022年4月在腾讯内部诞生，2025年9月正式拓展到外部
 ## 任务大厅
 
 
-项目名称： my-Oteam 项目激励：金币100 项目地址： https://github.com/issueshoot/testmd
+### 项目名称： my-Oteam
+完成激励：金币100 项目地址： https://github.com/issueshoot/testmd [查看更多issue](https://github.com/issueshoot/testmdissues?q=is%3Aissue%20state%3Aopen%20(label%3Aissueshoot-open%20OR%20label%3Aissueshoot-external%20))
 
 | 状态             | issue 名称                   | 技术领域           | 难度         | 预估人天 | 期望完成时间 | 认领人           |
 |:---------------|:---------------------------|:---------------|:-----------|:-----|:-------|:--------------| 
-| 招募中 | [test 7](https://github.com/issueshoot/testmd/issues/7) | 研发效能 | 中 | 6 | 2025-09-18 |  |  
-| 招募中 | [test 6](https://github.com/issueshoot/testmd/issues/6) | 研发效能 | 中 | 6 | 2025-09-18 |  |  
-| 招募中 | [test 5](https://github.com/issueshoot/testmd/issues/5) | 研发效能 | 中 | 6 | 2025-09-18 |  |  
-| 招募中 | [test 3](https://github.com/issueshoot/testmd/issues/3) | 研发效能 | 中 | 5 | 2025-09-17 |  |  
-| 招募中 | [test 2](https://github.com/issueshoot/testmd/issues/2) | 研发效能 | 中 | 6 | 2025-09-18 |  |  
+| 招募中 | [test 7](https://github.com/issueshoot/testmd/issues/7) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
+| 招募中 | [test 6](https://github.com/issueshoot/testmd/issues/6) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
+| 招募中 | [test 5](https://github.com/issueshoot/testmd/issues/5) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
+| 招募中 | [test 3](https://github.com/issueshoot/testmd/issues/3) | 研发效能 | 中 | 5 | 2025-09-17 |  -  |  
+| 招募中 | [test 2](https://github.com/issueshoot/testmd/issues/2) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
 
