@@ -32,7 +32,7 @@ IssueShoot于2022年4月在腾讯内部诞生，2025年9月正式拓展到外部
 完成激励：金币100 项目地址： https://github.com/issueshoot/testmd 
 
 | 状态             | issue 名称                   | 技术领域           | 难度         | 预估人天 | 期望完成时间 | 认领人           |
-|:---------------|:---------------------------|:---------------|:-----------|:-----|:-------|:--------------| 
+|:---------------:|:---------------------------|:---------------:|:-----------:|:-----:|:-------:|:--------------:| 
 | 招募中 | [test 7](https://github.com/issueshoot/testmd/issues/7) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
 | 招募中 | [test 6](https://github.com/issueshoot/testmd/issues/6) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
 | 招募中 | [test 5](https://github.com/issueshoot/testmd/issues/5) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
@@ -44,7 +44,7 @@ IssueShoot于2022年4月在腾讯内部诞生，2025年9月正式拓展到外部
  项目地址： https://github.com/issueshoot/testmd2 [查看更多issue](https://github.com/issueshoot/testmd2/issues?q=is%3Aissue%20state%3Aopen%20(label%3Aissueshoot-open%20OR%20label%3Aissueshoot-external%20))
 
 | 状态             | issue 名称                   | 技术领域           | 难度         | 预估人天 | 期望完成时间 | 认领人           |
-|:---------------|:---------------------------|:---------------|:-----------|:-----|:-------|:--------------| 
+|:---------------:|:---------------------------|:---------------:|:-----------:|:-----:|:-------:|:--------------:| 
 | 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 6](https://github.com/issueshoot/testmd2/issues/6) | 研发效能 | 低 | 2 | 2025-09-20 |  -  |  
 | 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 5](https://github.com/issueshoot/testmd2/issues/5) | 研发效能 | 低 | 2 | 2025-09-20 |  -  |  
 | 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 4](https://github.com/issueshoot/testmd2/issues/4) | 研发效能 | 低 | 2 | 2025-09-20 |  -  |  
