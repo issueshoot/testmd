@@ -36,7 +36,7 @@ IssueShoot于2022年4月在腾讯内部诞生，2025年9月正式拓展到外部
 | 招募中 | [test 6](https://github.com/issueshoot/testmd/issues/6) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
 | 招募中 | [test 5](https://github.com/issueshoot/testmd/issues/5) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
 | 招募中 | [test 2](https://github.com/issueshoot/testmd/issues/2) | 研发效能 | 中 | 6 | 2025-09-18 |  -  |  
-| 进行中 | [test 7](https://github.com/issueshoot/testmd/issues/7) | 研发效能 | 中 | 6 | 2025-09-18 |  issueshoot@github.com;yinwuzhe@github.com;yinwuzhe@github.com  |  
+| 进行中 | [test 7](https://github.com/issueshoot/testmd/issues/7) | 研发效能 | 中 | 6 | 2025-09-18 |  issueshoot@github.com;yinwuzhe@github.com;  |  
 | 进行中 | [test 1](https://github.com/issueshoot/testmd/issues/1) | 研发效能 | 中 | 6 | 2025-09-18 |  yinwuzhe@github.com  |  
 
 ### 项目名称： techmap000
