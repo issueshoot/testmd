@@ -33,8 +33,8 @@ IssueShoot于2022年4月在腾讯内部诞生，2025年9月正式拓展到外部
 
 | 状态             | issue 名称                   | 技术领域           | 难度         | 预估人天 | 期望完成时间 | 认领人           |
 |:---------------:|:---------------------------|:---------------:|:-----------:|:-----:|:-------:|:--------------:| 
-| 招募中 | [test 6](https://github.com/issueshoot/testmd/issues/6) | 研发效能 | 中 | 6 | 2025-10-30 |  -  |  
-| 招募中 | [test 2](https://github.com/issueshoot/testmd/issues/2) | 研发效能 | 中 | 6 | 2025-10-30 |  -  |  
+| 招募中 | [test 6](https://github.com/issueshoot/testmd/issues/6) | 研发效能 | 中 | 6 | 2025-11-05 |  -  |  
+| 招募中 | [test 2](https://github.com/issueshoot/testmd/issues/2) | 研发效能 | 中 | 6 | 2025-11-05 |  -  |  
 | 进行中 | [test 1](https://github.com/issueshoot/testmd/issues/1) | 研发效能 | 中 | 6 | 2025-09-18 |  yinwuzhe@github.com  |  
 
 ### 项目名称： techmap000
@@ -43,9 +43,9 @@ IssueShoot于2022年4月在腾讯内部诞生，2025年9月正式拓展到外部
 
 | 状态             | issue 名称                   | 技术领域           | 难度         | 预估人天 | 期望完成时间 | 认领人           |
 |:---------------:|:---------------------------|:---------------:|:-----------:|:-----:|:-------:|:--------------:| 
-| 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 6](https://github.com/issueshoot/testmd2/issues/6) | 研发效能 | 低 | 2 | 2025-10-30 |  -  |  
-| 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 5](https://github.com/issueshoot/testmd2/issues/5) | 研发效能 | 低 | 2 | 2025-10-30 |  -  |  
-| 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 4](https://github.com/issueshoot/testmd2/issues/4) | 研发效能 | 低 | 2 | 2025-10-30 |  -  |  
-| 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 3](https://github.com/issueshoot/testmd2/issues/3) | 研发效能 | 低 | 2 | 2025-10-30 |  -  |  
-| 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 2](https://github.com/issueshoot/testmd2/issues/2) | 研发效能 | 低 | 2 | 2025-10-30 |  -  |  
+| 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 6](https://github.com/issueshoot/testmd2/issues/6) | 研发效能 | 低 | 2 | 2025-11-04 |  -  |  
+| 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 5](https://github.com/issueshoot/testmd2/issues/5) | 研发效能 | 低 | 2 | 2025-11-04 |  -  |  
+| 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 4](https://github.com/issueshoot/testmd2/issues/4) | 研发效能 | 低 | 2 | 2025-11-04 |  -  |  
+| 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 3](https://github.com/issueshoot/testmd2/issues/3) | 研发效能 | 低 | 2 | 2025-11-04 |  -  |  
+| 招募中 | [【组队：iOS，Android】多行input组件可控制高度/行高 2](https://github.com/issueshoot/testmd2/issues/2) | 研发效能 | 低 | 2 | 2025-11-04 |  -  |  
 
